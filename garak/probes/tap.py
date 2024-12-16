@@ -242,8 +242,8 @@ class PAIR(Probe):
     DEFAULT_PARAMS = Probe.DEFAULT_PARAMS | {
         "goal_str": GOAL,
         "target": TARGET,
-        "attack_model_type": "openai",
-        "attack_model_name": "chatgpt-4o-latest",
+         "attack_model_type": "huggingface.Model",
+        "attack_model_name": "lmsys/vicuna-13b-v1.3",
         "attack_model_config": {
             "max_tokens": 500,
             "hf_args": {"device": "cpu"},
