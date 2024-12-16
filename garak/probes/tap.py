@@ -129,7 +129,7 @@ class TAP(Probe):
         "depth": 10,
         "n_streams": 1,
         "keep_last_n": 1,
-        "pruning": True,
+        "pruning": False,
     }
 
     def __init__(self, config_root=_config):
@@ -292,7 +292,7 @@ class PAIR(Probe):
                 depth=self.depth,
                 n_streams=self.n_streams,
                 keep_last_n=self.keep_last_n,
-                pruning=self.pruning,
+                pruning=self.pruning | False,
             )
         except Exception as e:
             logging.error(e)
