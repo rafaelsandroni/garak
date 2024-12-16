@@ -242,15 +242,15 @@ class PAIR(Probe):
     DEFAULT_PARAMS = Probe.DEFAULT_PARAMS | {
         "goal_str": GOAL,
         "target": TARGET,
-        "attack_model_type": "huggingface.Model",
-        "attack_model_name": "lmsys/vicuna-13b-v1.3",
+        "attack_model_type": "groq",
+        "attack_model_name": "llama-3.3-70b-versatile",
         "attack_model_config": {
             "max_tokens": 500,
             "hf_args": {"device": "cpu"},
         },
         "attack_max_attempts": 5,
         "evaluator_model_type": "openai",
-        "evaluator_model_name": "gpt-3.5-turbo",
+        "evaluator_model_name": "gpt-4",
         "evaluator_model_config": {
             "max_tokens": 10,
             "temperature": 0.0,
