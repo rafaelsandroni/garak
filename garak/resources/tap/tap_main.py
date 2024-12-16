@@ -439,8 +439,8 @@ def run_tap(
 def generate_tap(
     goal: str,
     target: str,
-    attack_model_type: str = "groq",
-    attack_model_name: str = "llama-3.3-70b-versatile",
+    attack_model_type: str = "openai",
+    attack_model_name: str = "gpt-4",
     attack_model_config: dict = {"max_tokens": 500},
     attack_max_attempts: int = 5,
     target_model_type: str = "groq",
